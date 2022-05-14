@@ -10,7 +10,7 @@ Frontend: https://welovemovies-frontend-bay.vercel.app/
 
 Backend: https://welovemovies-12.herokuapp.com/
 
-Github Repository: https://github.com/rdburdett/we-love-movies-capstone
+Github Repository: https://github.com/rdburdett/we-love-movies
 
 ## Stack
 
