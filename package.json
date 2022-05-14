@@ -1,0 +1,31 @@
+{
+  "name": "we-love-movies",
+  "version": "1.0.0",
+  "description": "Full-stack capstone project for Thinkful Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm -prefix frontend run build",
+    "preinstall": "cd ./backend && npm install",
+    "install": "cd ./frontend && npm install",
+    "start": "npx concurrently 'npm run start:backend' 'npm run start:frontend'",
+    "start:backend": "npm --prefix ./backend start",
+    "start:frontend": "npm --prefix ./frontend start",
+    "start:dev": "npx concurrently 'npm run start:dev --prefix ./backend' 'npm start --prefix ./frontend'",
+    "test": "npm run test:frontend && npm run test:backend",
+    "heroku-push-backend": "git subtree push --prefix backend heroku-backend main",
+    "heroku-push-frontend": "git subtree push --prefix frontend heroku-frontend main",
+    "deploy:frontend": "npm run heroku-push-frontend",
+    "deploy:backend": "npm run heroku-push-backend",
+    "deploy": "npm run deploy:frontend & npm run deploy:backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdburdett/we-love-movies.git"
+  },
+  "author": "Robert Burdett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdburdett/we-love-movies/issues"
+  },
+  "homepage": "https://github.com/rdburdett/we-love-movies#readme"
+}
