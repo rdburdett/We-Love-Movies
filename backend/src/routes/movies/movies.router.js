@@ -9,7 +9,7 @@ router
   .get(theatersController.list)
   .all(methodNotAllowed);
   
-  router
+router
   .route("/:movieId/reviews")
   .get(reviewsController.read)
   .all(methodNotAllowed);
