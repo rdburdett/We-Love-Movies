@@ -12,7 +12,7 @@ const theatersRouter = require("./routes/theaters/theaters.router");
 const notFound = require("./errors/notFound");
 const errorHandler = require("./errors/errorHandler");
 
-// Main app //
+// Main app
 app.use(cors());
 app.use(express.json());
 app.use("/movies", moviesRouter);
