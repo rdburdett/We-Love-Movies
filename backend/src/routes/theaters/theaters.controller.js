@@ -3,7 +3,7 @@ const asyncErrorBoundary = require("../../errors/asyncErrorBoundary");
 
 // Helper function for list
 async function listMoviesByTheater() {
-  // // List all theaters
+  // List all theaters
   const theaterList = await service.listAllTheaters()
 
   // Add matching movies to each theater
